@@ -1,0 +1,8 @@
+Conociendo GitHub
+
+Abrir la cuenta github.com
+Descargar la aplicación http://git-scm.com/ 
+Acceso a la aplicación desde el escritorio: https://desktop.github.com/
+
+
+xBmAacJH

@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS First Application</title>
+</head>
+
+<body>
+	<div ng-app>
+	<h1>Sample Application</h1>
+    
+	<p>Primer nombre: <input  type="number" ng-model="my_name"/></p>
+        
+    <p> Hola {{ (my_name | currency ) + '&nbsp;' + 'pesos' | uppercase }}!</p>
+    
+	</div>
+	<script type="text/javascript"src="../assets/angular.min.js"></script>
+</body>
+</html>

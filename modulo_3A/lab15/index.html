@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="lab14"><!--padre del módulo 'varia'-->
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-controller="controllerLab14"><!--Directiva = 'ng-controller' controladores-->
+		<div ng-show="revealDiv"><!--Directiva 'ng-show' true o folse-->
+			<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años.</p>
+            <button ng-click="controlButtonP()" ng-show="revealButtonP">Ocultar párrafo</button>
+		</div>
+
+		<button ng-click="controlButton()" ng-show="revealButton">Ocultar button</button>
+	</div>
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+
+	<script type="text/javascript">
+
+	angular.module('lab14', [])
+		   .controller('controllerLab14', function($scope){
+		   		$scope.revealDiv = false;  
+		   		$scope.revealButton = true;
+
+					$scope.controlButtonP = function(){
+		   			$scope.revealDiv = false;
+		   			$scope.revealButtonP = true;
+		   		};
+
+		   		$scope.controlButton = function(){
+		   			$scope.revealDiv = true;
+		   			$scope.revealButton = false;
+		   		};
+				
+
+		   });
+	</script>
+
+
+</body>
+</html>
